@@ -1379,7 +1379,7 @@ class _Host(object):
                     return ''
 
             if not isinstance(data, str):
-                data = data.decode('utf8')
+                data = data.decode('utf-8-sig')
             buf += data
         self.buffer = buf[index + 2:]
         return buf[:index]

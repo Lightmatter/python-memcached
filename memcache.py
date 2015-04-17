@@ -1378,8 +1378,6 @@ class _Host(object):
                 else:
                     return ''
 
-            if not isinstance(data, str):
-                data = data.decode('utf-16')
             buf += data
         self.buffer = buf[index + 2:]
         return buf[:index]
